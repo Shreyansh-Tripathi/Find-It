@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/signupbg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SignUpActivity">
+
+    <EditText
+        android:id="@+id/sgfirstname"
+        android:layout_width="254dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_field"
+        android:hint="@string/first_name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/regular"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/sglastname"
+        android:layout_width="254dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_field"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/sgemail"
+        android:layout_width="254dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:background="@drawable/input_field"
+        android:hint="@string/enter_email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/sgpassword"
+        android:layout_width="254dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_field"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/regular"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="254dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:background="@drawable/buttonbg"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/google_signup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/google_logo"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null" />
+
+</LinearLayout>

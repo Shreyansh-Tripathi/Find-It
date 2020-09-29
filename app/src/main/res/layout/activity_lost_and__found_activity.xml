@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.Lost_and_Found_activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/found_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:clickable="true"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="35dp"
+                android:text="@string/found"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/found_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="@color/white"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lost_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:clickable="true"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:paddingTop="35dp"
+                android:text="@string/lost"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/lost_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:visibility="invisible"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/found_frag"
+        android:name="com.example.unlost.fragments.FoundFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        tools:layout="@layout/fragment_found" />
+
+    <fragment
+        android:id="@+id/lost_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:visibility="gone"
+        android:name="com.example.unlost.fragments.LostFragment"
+        tools:layout="@layout/fragment_lost" />
+
+</LinearLayout>
+
